@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#solar_system{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: rgb(5, 5, 58);
+    height: 100vh;
+}
+.box{
+    border-radius: 50%;
+    display: inline-block;
+    padding: 30px;
+    border: 1px solid white;
+}
+ 
+.sun{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+.sun #sun{
+    width: 70px;
+    height: 70px;
+}
+
+.sun #planet1{
+    top: -15px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.planet1 #planet2{
+    top: 0;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.planet1{
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    position: relative;
+}
+.planet2 #planet3{
+    top: 7px;
+    width: 43px;
+    height: 30px;
+    position: absolute;
+}
+.planet2{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+.planet4 #planet5{
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.planet4{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    position: relative;
+}
